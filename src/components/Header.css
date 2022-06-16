@@ -1,0 +1,35 @@
+html {
+  overflow: hidden;
+  height: 100vh;
+}
+body {
+  overflow: auto;
+  height: 100vh;
+}
+.header-wrapper {
+  color: white !important;
+  background-color: black !important;
+}
+.text-wrapper {
+  color: white !important;
+  text-decoration: none !important;
+  margin-left: 10 !important;
+  margin-right: 10 !important;
+}
+.text-wrapper img {
+  color: white !important;
+  text-decoration: none !important;
+  padding-left: 15 !important;
+  padding-right: 15 !important;
+}
+@media (min-width: 600px) {
+  .outer-wrapper {
+    margin-left: 400px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .image-wrapper {
+    display: none;
+  }
+}

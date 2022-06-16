@@ -8,6 +8,13 @@ import Youtube from "./Youtube/Youtube";
 import YouTubeDetail from "./YouTubeDetail/YouTubeDetail";
 import Iphone from "./pages/Iphone";
 import DetailIphone from "./pages/DetailIphone";
+import FourOfFour from "./pages/FourOfFour/FourOfFour";
+import Mac from "./pages/Mac";
+import Watch from "./pages/Watch";
+import TV from "./pages/TV";
+import Support from "./pages/Support";
+import Music from "./pages/Music";
+import Ipad from "./pages/Ipad";
 import "./css/styles.css";
 import "./css/bootstrap.css";
 
@@ -16,21 +23,25 @@ function App() {
     <div>
       <Router>
         <Header />
+        <Routes>
+          <Route path="*" element={<FourOfFour />} />
 
-        <Routes>
           <Route path="/Iphone" element={<Iphone />} />
-        </Routes>
-        <Routes>
+          <Route path="/Mac" element={<Mac />} />
+          <Route path="/Ipad" element={<Ipad />} />
+          <Route path="/Watch" element={<Watch />} />
+          <Route path="/Music" element={<Music />} />
+          <Route path="/Support" element={<Support />} />
+          <Route path="/TV" element={<TV />} />
+
           <Route path="/Iphone/:IphoneId" element={<DetailIphone />} />
-        </Routes>
-        <Routes>
+
           <Route path="/" element={<Main />} />
+
+          {/* <Route path="/YouTubeDetail" element={<YouTubeDetail />} /> */}
         </Routes>
         <Routes>
           <Route path="/" element={<Youtube />} />
-        </Routes>
-        <Routes>
-          <Route path="/YouTubeDetail" element={<YouTubeDetail />} />
         </Routes>
         <Footer />
       </Router>

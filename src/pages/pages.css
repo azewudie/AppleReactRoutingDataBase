@@ -1,0 +1,11 @@
+.textImage-wrapper {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.textPages-wrapper {
+  margin-left: 100px;
+  padding-top: 100px;
+  width: auto;
+  height: auto;
+}

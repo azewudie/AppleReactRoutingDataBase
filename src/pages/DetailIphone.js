@@ -66,7 +66,7 @@ const DetailIphone = () => {
                     <div className="links-wrapper">
                       <ul>
                         <li>
-                          <Link to={IphonePage}> Watch Iphone List</Link>
+                          <Link to={IphonePage}>Iphone List</Link>
                         </li>
                       </ul>
                     </div>
