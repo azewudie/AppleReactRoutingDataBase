@@ -12,7 +12,7 @@ export default class YouTubeDetail extends Component {
   render() {
     const opts = {
       height: "200",
-      width: "350",
+      width: "417",
       playerVars: {
         autoplay: 1,
         // https://developers.google.com/youtube/player_parameters,
